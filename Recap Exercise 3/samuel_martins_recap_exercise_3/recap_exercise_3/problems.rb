@@ -304,30 +304,6 @@ def prime_factorization(num)
     [i] + var
 end
 
-# 24 / 2 = 12
-# 2 , 12 / 2 = 6
-# 2, 2, 6 / 2 = 3
-# 2 , 2 , 2 , 3
-# 25 / 2
-# 25 / 3
-# 25 / 4
-# 25 / 5 = 5
-# 5, 5 5 / 2
-# 5 , 5 5 / 3
-# 5, 5 , 5 / 4
-# 5, 5 , 5 / 5 = 1
-# 5, 5, 5, 5, 1
-
-def prime?(n)
-    return false if n < 2
-    i = 2
-    while i < n do
-        return false if n % i == 0
-        i += 1
-    end
-    return true
-end
-
 # # Examples
 p prime_factorization(12)     # => [2, 2, 3]
 p prime_factorization(24)     # => [2, 2, 2, 3]
